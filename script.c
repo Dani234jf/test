@@ -5,6 +5,7 @@ int add(int a , int b) {
 }
 
 int main() {
+    // Test print statement
     int x, y ;
     printf("soma: %d ",add(x,y));
     printf("Hello, world. Its new test!");
