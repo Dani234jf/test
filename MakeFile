@@ -1,0 +1,22 @@
+CC = cc
+target = main.exe
+c_files = $(wildcard *.c)
+
+ifeq ( $(OS), Windows_NT )
+	RM = del
+else 
+	RM = rm
+endif
+
+.PHONY = all clean
+
+all: run
+
+run: $(target)
+	./$(target)
+
+$(target): $(c_files)
+	$(CC) $(c_files) -o $(target)
+
+clean:
+	del $(target)
