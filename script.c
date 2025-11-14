@@ -9,7 +9,7 @@ int main() {
     int x, y ;
     printf("soma: %d ",add(x,y));
 
-    print("");
+    print("Hello!");
 
     printf("Hello, world. Its new test!");
     return 0;
